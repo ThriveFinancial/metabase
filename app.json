@@ -17,7 +17,6 @@
   "addons": [
   ],
   "buildpacks": [
-    { "url": "https://github.com/heroku/heroku-buildpack-nodejs" },
-    { "url": "https://github.com/heroku/heroku-buildpack-clojure" }
+    { "url": "https://github.com/TomSesselmann/heroku-buildpack-clojure" }
   ]
 }
