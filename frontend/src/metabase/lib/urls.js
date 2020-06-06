@@ -114,8 +114,9 @@ export function label(label) {
 }
 
 export function publicQuestion(uuid, type = null) {
-  const siteUrl = MetabaseSettings.get("site-url");
-  return `${siteUrl}/public/question/${uuid}` + (type ? `.${type}` : ``);
+  // const siteUrl = MetabaseSettings.get("site-url");
+  const exportSiteUrl = "https://thrive-data-exporter.herokuapp.com"
+  return `${exportSiteUrl}/public/question/${uuid}` + (type ? `.${type}` : ``);
 }
 
 export function publicDashboard(uuid) {
